@@ -4,7 +4,7 @@
 
 Manually increment version and copy **flash-detection-redirect.min.js** to the deployment repository (automation coming soon!):
 
-**dev** branch of https://github.com/NBCUOTS/player.common.plugin
+**dev** branch of https://github.com/NBCUOTS/player.common.vod
 Once changes are pushed to origin/dev, automation will deploy here:
 https://s3-us-west-2.amazonaws.com/tverationalplayer-dev/player/common/vod/.3.5/js/flash-detection-redirect.min.js
 
