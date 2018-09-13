@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for flash-detection-redirect.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> flash-detection-redirect.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/42</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/56</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/42</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// v0.0.4
+<span class="cstat-no" title="statement not covered" >$pdk.env.Detect.getInstance().addToConfigSet("flashblacklist", "None|None");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$pdk.controller.addEventListener("OnPlayerLoaded", <span class="fstat-no" title="function not covered" >function (</span>e) {</span>
+&nbsp;
+        var isMobile = <span class="cstat-no" title="statement not covered" >/android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos|playbook|silk/i.test(navigator.userAgent);</span>
+        var redirectUrl = <span class="cstat-no" title="statement not covered" >document.getElementById("player") ? document.getElementById("player").getAttribute("tp:needFlashUrl") : false;</span>
+        function <span class="fstat-no" title="function not covered" >hasFlash() {</span>
+            var flash = <span class="cstat-no" title="statement not covered" >false;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            try {</span>
+                var fo = <span class="cstat-no" title="statement not covered" >new ActiveXObject('ShockwaveFlash.ShockwaveFlash');</span>
+<span class="cstat-no" title="statement not covered" >                if (fo) {</span>
+<span class="cstat-no" title="statement not covered" >                    flash = true;</span>
+                }
+            } catch (e) {
+<span class="cstat-no" title="statement not covered" >                if (navigator.mimeTypes &amp;&amp; navigator.mimeTypes['application/x-shockwave-flash'] != undefined &amp;&amp; navigator.mimeTypes['application/x-shockwave-flash'].enabledPlugin) {</span>
+<span class="cstat-no" title="statement not covered" >                    flash = true;</span>
+                }
+            }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            return flash;</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (isMobile || !redirectUrl)</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+&nbsp;
+        var isVersion57Plus = <span class="cstat-no" title="statement not covered" >parseFloat($pdk.version.major + '.' + $pdk.version.minor) &gt;= 5.7;</span>
+        var isMSERuntime = <span class="cstat-no" title="statement not covered" >document.getElementById("player").getAttribute("tp:PreferredRuntimes") != "universal,flash,html5";</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (isVersion57Plus &amp;&amp; isMSERuntime) {</span>
+&nbsp;
+            // execute hls.js logic
+&nbsp;
+            // If the browser is Internet Explorer 9 or 10,  then redirect to the URL as defined above.  Internet Explorer 9 can be identified if the user agent contains "Trident/5.0".  Internet Explorer 10 can be identified if the user agent contains "Trident/6.0".
+            // If the browser is Internet Explorer 11 and the Operating System is Windows 8 or earlier,   then redirect to the URL as defined above.  Internet Explorer 11 can be identified if the user agent contains "Trident/7.0".  Windows 8 and earlier can be identified if the user agent contains "Windows NT" followed by a version number &lt; 6.3.  I.E. "Windows NT 6.1".
+&nbsp;
+            var isIE9or10 = <span class="cstat-no" title="statement not covered" >window.navigator.userAgent.indexOf("Trident/5.0") &gt; 0 || window.navigator.userAgent.indexOf("Trident/6.0") &gt; 0;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            if (isIE9or10 &amp;&amp; redirectUrl &amp;&amp; !hasFlash()) {</span>
+<span class="cstat-no" title="statement not covered" >                window.location.href = redirectUrl;</span>
+            } else {
+&nbsp;
+                var isIE11andWindows = <span class="cstat-no" title="statement not covered" >window.navigator.userAgent.indexOf("Trident/7.0") &gt; 0 &amp;&amp; window.navigator.userAgent.indexOf("Windows NT") &gt; 0;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                if (isIE11andWindows) {</span>
+                    var ua = <span class="cstat-no" title="statement not covered" >window.navigator.userAgent;</span>
+                    var windowsVersion = <span class="cstat-no" title="statement not covered" >Number(ua.substring(ua.indexOf("Windows NT") + 11, ua.indexOf("Windows NT") + 14));</span>
+                    var minVersion = <span class="cstat-no" title="statement not covered" >6.3;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    if (!isNaN(windowsVersion) &amp;&amp; windowsVersion &lt; minVersion &amp;&amp; !hasFlash()) {</span>
+<span class="cstat-no" title="statement not covered" >                        window.location.href = redirectUrl;</span>
+                    }
+                }
+            }
+&nbsp;
+        } else {
+&nbsp;
+            // execute Mangui Logic
+&nbsp;
+            // 1. If the browser is on desktop, is NOT one of Safari or Edge, and the content is a full episode,  then redirect to the URL as defined above.
+            // 2. If the content is short form and the browser is IE 10 or IE 11 and Flash is disabled, then redirect to the URL as defined above.
+            // Note: that there is no case where mobile should be redirected to the "Get Flash" page and the mobile detection logic described above (regarding attempted playback of full episodes on mobile) shall still apply.
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            $pdk.controller.addEventListener("OnReleaseStart", <span class="fstat-no" title="function not covered" >function (</span>e) {</span>
+&nbsp;
+                var isSafari = <span class="cstat-no" title="statement not covered" >navigator.userAgent.search("Safari") &gt;= 0 &amp;&amp; navigator.userAgent.search("Chrome") &lt; 0;</span>
+                var isEdge = <span class="cstat-no" title="statement not covered" >navigator.userAgent.search("Edge/") &gt;= 0;</span>
+                var isFullepisode = <span class="cstat-no" title="statement not covered" >false;</span>
+                var isIE10or11 = <span class="cstat-no" title="statement not covered" >false;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                for (i = 0; i &lt; e.data.baseClips.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >                    if (e.data.baseClips[i]['contentCustomData']) {</span>
+&nbsp;
+                        // if any content custom data is fullEpisode then we redirect.
+<span class="cstat-no" title="statement not covered" >                        if (e.data.baseClips[i]['contentCustomData']['fullEpisode'] == 'true') {</span>
+<span class="cstat-no" title="statement not covered" >                            isFullepisode = true;</span>
+&nbsp;
+                            // 1. If the browser is on desktop,
+                            //       is NOT one of Safari or Edge,
+                            //       and the content is a full episode,
+                            //       and flash is disabled
+                            //
+                            // then redirect to the URL as defined above.
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                            if (!hasFlash() &amp;&amp; redirectUrl &amp;&amp; !isMobile &amp;&amp; (!isSafari || !isEdge) &amp;&amp; isFullepisode)</span>
+<span class="cstat-no" title="statement not covered" >                                window.location.href = redirectUrl;</span>
+                        }
+                    }
+                }
+&nbsp;
+                // 2. If the content is short form
+                //       and the browser is IE 10 or IE 11
+                //       and Flash is disabled,
+                // then redirect to the URL as defined above.
+&nbsp;
+                // (if were here we must be shortform.)
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                if (window.navigator.userAgent.indexOf("Trident/7.0") &gt; 0 || window.navigator.userAgent.indexOf("Trident/6.0") &gt; 0)</span>
+<span class="cstat-no" title="statement not covered" >                    isIE10or11 = true;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                if (!hasFlash() &amp;&amp; redirectUrl &amp;&amp; isIE10or11)</span>
+<span class="cstat-no" title="statement not covered" >                    window.location.href = redirectUrl;</span>
+&nbsp;
+            });
+&nbsp;
+        }
+&nbsp;
+    }
+);</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Sep 12 2018 18:19:08 GMT-0700 (PDT)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
